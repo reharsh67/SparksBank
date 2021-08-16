@@ -17,11 +17,13 @@
 body {
     font-family: 'Open Sans', sans-serif;
     line-height:25px;
+	min-height: 100%;
 }
 
 #wrapper {
     width: 100%;
     background: #202020;
+	min-height: 100%;
 }
 
 #page-wrapper {
@@ -35,7 +37,7 @@ body {
     margin: 10px 20px 10px 0px;
     background-color: #fff!important;
     padding: 10px;
-    min-height: 1200px;
+    min-height: 700px;
 }
 
 .page-head-line {
@@ -186,6 +188,7 @@ body {
 .navbar-cls-top {
     background: #00CA79;
     border-bottom: none;
+	
 }
 
 
@@ -237,7 +240,7 @@ body {
     #page-wrapper {
         margin: 0 0 0 260px;
         padding: 15px 30px;
-        min-height: 1200px;
+        min-height: 829px;
     }
 
 
@@ -245,6 +248,7 @@ body {
         z-index: 1;
         position: absolute;
         width: 260px;
+		height : 5px;
     }
 
     .navbar {
