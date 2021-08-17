@@ -11,7 +11,7 @@ namespace SparksBank
 {
 
 
-    public partial class Dashboard
+    public partial class Transact
     {
 
         /// <summary>
@@ -24,30 +24,12 @@ namespace SparksBank
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// totalHoldings control.
+        /// custId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label totalHoldings;
-
-        /// <summary>
-        /// totalCustomers control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label totalCustomers;
-
-        /// <summary>
-        /// recentTransactions control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label recentTransactions;
+        protected global::System.Web.UI.WebControls.DropDownList custId;
     }
 }

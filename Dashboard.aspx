@@ -57,14 +57,14 @@
 
 
                     <li>
-                        <a class="active-menu" href="index.html"><i class="fa fa-dashboard "></i>Dashboard</a>
+                        <a class="active-menu" href="#"><i class="fa fa-dashboard"></i>Dashboard</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-user "></i>Customers</a>
+                        <a href="Cust_details.aspx"><i class="fa fa-user "></i>Customers</a>
                          
                     </li>
                      <li>
-                        <a href="#"><i class="fa fa-money "></i>Transact</span></a>
+                        <a href="Transact.aspx"><i class="fa fa-money "></i>Transact</span></a>
                          
                     </li>
                     <li>
@@ -95,7 +95,7 @@
                     <div class="col-md-4">
                         <div class="main-box mb-red">
                             
-                                
+                                <asp:Label ID="totalHoldings" runat="server" Font-Bold="True" Font-Italic="True" Font-Names="Arial Black" Font-Size="X-Large" ></asp:Label>
                                 <h5>Total Holdings</h5>
 
                         </div>
@@ -103,7 +103,7 @@
                     <div class="col-md-4">
                         <div class="main-box mb-dull">
                             
-                                
+                                 <asp:Label ID="totalCustomers" runat="server" Font-Bold="True" Font-Italic="True" Font-Names="Arial Black" Font-Size="X-Large"></asp:Label>
                                 <h5>Total Customers</h5>
                             
                         </div>
@@ -111,8 +111,8 @@
                     <div class="col-md-4">
                         <div class="main-box mb-pink">
                             
-                                
-                                <h5>Recent Transactions </h5>
+                                 <asp:Label ID="recentTransactions" runat="server" Font-Bold="True" Font-Italic="True" Font-Names="Arial Black" Font-Size="X-Large"></asp:Label>
+                                 <h5>Recent Transactions </h5>
                           
                         </div>
                     </div>
