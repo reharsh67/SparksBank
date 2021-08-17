@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Recent_TR.aspx.cs" Inherits="SparksBank.Recent_TR" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cust_Details.aspx.cs" Inherits="SparksBank.Cust_Details" %>
 
 <!DOCTYPE html>
 
@@ -80,7 +80,7 @@
                 <div id="page-inner">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="page-head-line">Recent Transactions</h1>
+                            <h1 class="page-head-line">All Account Holders</h1>
                             
 
                         </div>
@@ -90,27 +90,29 @@
 
                     <!-- /. ROW  -->
                     <center>
-                    <asp:GridView ID="GridView1" runat="server" EmptyDataText="No Records Found" ShowHeaderWhenEmpty="True" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="1121px" >
+                    <asp:GridView ID="GridView1" runat="server" EmptyDataText="No Records Found" OnRowCommand="My_Row_Command"  ShowHeaderWhenEmpty="True" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="1121px" >
                         <AlternatingRowStyle BackColor="White" />
                      <Columns>
-                    <asp:BoundField DataField="tr_id" HeaderText="Transaction ID" HeaderStyle-width="5%" HeaderStyle-height="5%"   >
+                    <asp:BoundField DataField="customer_id" HeaderText="Customer ID" HeaderStyle-width="5%" HeaderStyle-height="5%"   >
 <HeaderStyle Height="5%" Width="5%"></HeaderStyle>
                     </asp:BoundField>
-                    <asp:BoundField DataField="sender" HeaderText="Sender" HeaderStyle-width="20%" HeaderStyle-height="5%">
+                    <asp:BoundField DataField="cname" HeaderText="Name" HeaderStyle-width="20%" HeaderStyle-height="5%">
 <HeaderStyle Height="5%" Width="20%"></HeaderStyle>
                     </asp:BoundField>
-                    <asp:BoundField DataField="recevier" HeaderText="Reciver" HeaderStyle-width="20%" HeaderStyle-height="5%">
+                    <asp:BoundField DataField="mobile" HeaderText="Mobile" HeaderStyle-width="20%" HeaderStyle-height="5%">
 <HeaderStyle Height="5%" Width="20%"></HeaderStyle>
                     </asp:BoundField>
-                    <asp:BoundField DataField="time_date" HeaderText="Date" HeaderStyle-width="20%" HeaderStyle-height="5%">
+                    <asp:BoundField DataField="balance" HeaderText="balance" HeaderStyle-width="20%" HeaderStyle-height="5%">
 <HeaderStyle Height="5%" Width="20%"></HeaderStyle>
                     </asp:BoundField>
-                    <asp:BoundField DataField="amount" HeaderText="Amount" HeaderStyle-width="20%" HeaderStyle-height="5%">
+                    <asp:BoundField DataField="astatus" HeaderText="Status" HeaderStyle-width="20%" HeaderStyle-height="5%">
 <HeaderStyle Height="5%" Width="20%"></HeaderStyle>
                     </asp:BoundField>
-                    <asp:BoundField DataField="tr_status" HeaderText="Status" HeaderStyle-width="20%" HeaderStyle-height="5%">
-<HeaderStyle Height="5%" Width="20%"></HeaderStyle>
-                    </asp:BoundField>
+                    <asp:TemplateField ShowHeader="True" HeaderText="Action">
+            <ItemTemplate>
+                <asp:LinkButton ID="Button1" runat="server" CausesValidation="false" Width="150px" height="30px"    style="TEXT-ALIGN:center; color:red; top:5px;" CommandName="Respond" Text="" CommandArgument='<%# Container.DataItemIndex %>'  > View <span class="fa fa-edit "></span></asp:LinkButton>
+            </ItemTemplate>
+        </asp:TemplateField>
                      
                 </Columns>
                         <EditRowStyle BackColor="#7C6F57" />

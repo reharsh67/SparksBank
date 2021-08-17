@@ -67,12 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Cust_Details.aspx" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Recent_TR.aspx" />
     <Content Include="Transact.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cust_Details.aspx.cs">
+      <DependentUpon>Cust_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cust_Details.aspx.designer.cs">
+      <DependentUpon>Cust_Details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
