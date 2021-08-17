@@ -57,7 +57,7 @@
 
 
                     <li>
-                        <a class="active-menu" href="#"><i class="fa fa-dashboard"></i>Dashboard</a>
+                        <a class="active-menu" href="Dashboard.aspx"><i class="fa fa-dashboard"></i>Dashboard</a>
                     </li>
                     <li>
                         <a href="Cust_details.aspx"><i class="fa fa-user "></i>Customers</a>
@@ -68,13 +68,10 @@
                          
                     </li>
                     <li>
-                        <a href="table.html"><i class="fa fa-clock-o "></i>Recent Transactions </a>
+                        <a href="Recent_TR.aspx"><i class="fa fa-clock-o "></i>Recent Transactions </a>
                         
                     </li>
-                     <li>
-                        <a href="#"><i class="fa fa-bicycle "></i>Customer Details </span></a>
-                         
-                    </li>
+                     
                     
                 </ul>
 

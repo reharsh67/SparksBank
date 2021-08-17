@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Transact.aspx.cs" Inherits="SparksBank.Transact" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Recent_TR.aspx.cs" Inherits="SparksBank.Recent_TR" %>
 
 <!DOCTYPE html>
 
@@ -69,7 +69,8 @@
                             <a href="Recent_TR.aspx"><i class="fa fa-clock-o "></i>Recent Transactions </a>
 
                         </li>
-                       
+                        
+
                     </ul>
 
                 </div>
@@ -79,65 +80,59 @@
                 <div id="page-inner">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="page-head-line">TRANSACT</h1>
+                            <h1 class="page-head-line">Recent Transactions</h1>
                             
 
                         </div>
                     </div>
 
-
+                     <br />
 
                     <!-- /. ROW  -->
+                    <center>
+                    <asp:GridView ID="GridView1" runat="server" EmptyDataText="No Records Found" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" Width="1121px" >
+                        <AlternatingRowStyle BackColor="White" />
+                     <Columns>
+                    <asp:BoundField DataField="tr_id" HeaderText="Transaction ID" HeaderStyle-width="5%" HeaderStyle-height="5%"   >
+<HeaderStyle Height="5%" Width="5%"></HeaderStyle>
+                    </asp:BoundField>
+                    <asp:BoundField DataField="sender" HeaderText="Sender" HeaderStyle-width="20%" HeaderStyle-height="5%">
+<HeaderStyle Height="5%" Width="20%"></HeaderStyle>
+                    </asp:BoundField>
+                    <asp:BoundField DataField="recevier" HeaderText="Reciver" HeaderStyle-width="20%" HeaderStyle-height="5%">
+<HeaderStyle Height="5%" Width="20%"></HeaderStyle>
+                    </asp:BoundField>
+                    <asp:BoundField DataField="time_date" HeaderText="Date" HeaderStyle-width="20%" HeaderStyle-height="5%">
+<HeaderStyle Height="5%" Width="20%"></HeaderStyle>
+                    </asp:BoundField>
+                    <asp:BoundField DataField="amount" HeaderText="Amount" HeaderStyle-width="20%" HeaderStyle-height="5%">
+<HeaderStyle Height="5%" Width="20%"></HeaderStyle>
+                    </asp:BoundField>
+                    <asp:BoundField DataField="tr_status" HeaderText="Status" HeaderStyle-width="20%" HeaderStyle-height="5%">
+<HeaderStyle Height="5%" Width="20%"></HeaderStyle>
+                    </asp:BoundField>
+                     
+                </Columns>
+                        <EditRowStyle BackColor="#7C6F57" />
+                        <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+                        <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
+                        <RowStyle BackColor="#E3EAEB" />
+                        <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
+                        <SortedAscendingCellStyle BackColor="#F8FAFA" />
+                        <SortedAscendingHeaderStyle BackColor="#246B61" />
+                        <SortedDescendingCellStyle BackColor="#D4DFE1" />
+                        <SortedDescendingHeaderStyle BackColor="#15524A" />
+                    </asp:GridView>
 
-                    <br />
                    
+                   
+                    </center>
+
+
                     
-
-
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    Operation
-                                </div>
-                                <div class="panel-body">
-                                    <div class="form-group">
-                                        <label>Select Customer ID --‎‎‎‎‎‎‎‏‏‎         </label>
-                                        <asp:DropDownList ID="custIdSender" AppendDataBoundItems="true" class="input--style-4" Height="50" style="width:inherit"  runat="server" AutoPostBack="true" required>
-                                            <asp:ListItem Value=''>--- Please Select Sender ---</asp:ListItem>
-                                        </asp:DropDownList>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label>Enter Amount ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎  --</label>
-                                        <asp:TextBox ID="amt" runat="server" style="width:inherit"  Height="50" required></asp:TextBox>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label>Select Customer ID --‎‎‎‎‎‎‎‏‏‎         </label>
-                                        <asp:DropDownList ID="custIdReciver" AppendDataBoundItems="true" class="input--style-4" Height="50" style="width:inherit"   runat="server" AutoPostBack="true" required>
-                                            <asp:ListItem Value=''>--- Please Select Sender ---</asp:ListItem>
-                                        </asp:DropDownList>
-                                        </div>
-                                        
-                                    </div>
-                                   
-                                    <div class="form-group">
-                                        <center>
-                                        <asp:Button ID="Trans" runat="server" onClick="Trans_Click" Text="Transfer"/>
-                                            </center>
-                                        
-                                    </div>
-                                </div>
-                              <center><asp:Label runat="server" ID="alertMsg" Font-Bold="True" Font-Italic="True" Font-Size="XX-Large" ForeColor="#00CC00"></asp:Label></center>
-                            </div>
-
-                        </div>
-                </div>
                     </div>
-                
+                </div>
             </div>
 
             <!--/.ROW-->
