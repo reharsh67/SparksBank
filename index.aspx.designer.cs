@@ -11,52 +11,34 @@ namespace SparksBank
 {
 
 
-    public partial class Transact
+    public partial class index
     {
 
         /// <summary>
-        /// custIdSender control.
+        /// totalHoldings control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList custIdSender;
+        protected global::System.Web.UI.WebControls.Label totalHoldings;
 
         /// <summary>
-        /// amt control.
+        /// totalCustomers control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox amt;
+        protected global::System.Web.UI.WebControls.Label totalCustomers;
 
         /// <summary>
-        /// custIdReciver control.
+        /// recentTransactions control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList custIdReciver;
-
-        /// <summary>
-        /// Trans control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Trans;
-
-        /// <summary>
-        /// alertMsg control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label alertMsg;
+        protected global::System.Web.UI.WebControls.Label recentTransactions;
     }
 }

@@ -1,26 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Full_Details.aspx.cs" Inherits="SparksBank.Full_Details" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Full_Details.aspx.cs" MasterPageFile="Site1.Master" Inherits="SparksBank.Full_Details" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TSF BANK</title>
-
-    <!-- BOOTSTRAP STYLES-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <!-- FONTAWESOME STYLES-->
-    <link href="assets/css/font-awesome.css" rel="stylesheet" />
-    <!--CUSTOM BASIC STYLES-->
-    <link href="assets/css/basic.css" rel="stylesheet" />
-    <!--CUSTOM MAIN STYLES-->
-    <link href="assets/css/custom.css" rel="stylesheet" />
-    <!-- GOOGLE FONTS-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div id="wrapper">
             <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
@@ -173,20 +153,4 @@
 
 
                     <!-- /. PAGE INNER  -->
-    </form>
-    <div id="footer-sec">
-        &copy; 2021 Reharsh Deshpande | Designed For : The Sparks Foundation
-    </div>
-    <!-- /. FOOTER  -->
-    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-    <!-- JQUERY SCRIPTS -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
-    <!-- BOOTSTRAP SCRIPTS -->
-    <script src="assets/js/bootstrap.js"></script>
-    <!-- METISMENU SCRIPTS -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
-    <!-- CUSTOM SCRIPTS -->
-    <script src="assets/js/custom.js"></script>
-
-</body>
-</html>
+   </asp:Content>

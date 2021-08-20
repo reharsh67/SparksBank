@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cust_Details.aspx" />
-    <Content Include="Dashboard.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="Full_Details.aspx" />
     <Content Include="Recent_TR.aspx" />
     <Content Include="Transact.aspx" />
@@ -82,12 +82,12 @@
     <Compile Include="Cust_Details.aspx.designer.cs">
       <DependentUpon>Cust_Details.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard.aspx.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard.aspx.designer.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Full_Details.aspx.cs">
       <DependentUpon>Full_Details.aspx</DependentUpon>
@@ -104,6 +104,13 @@
     <Compile Include="Recent_TR.aspx.designer.cs">
       <DependentUpon>Recent_TR.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
     <Compile Include="Transact.aspx.cs">
       <DependentUpon>Transact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -114,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

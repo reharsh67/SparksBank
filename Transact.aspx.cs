@@ -14,6 +14,8 @@ namespace SparksBank
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack) 
+            {
             try
             {
                 const string strcon = "Data Source=DESKTOP-40VMRJT\\SQLEXPRESS;Initial Catalog=SparksDatabase;Integrated Security=True;";
@@ -30,14 +32,14 @@ namespace SparksBank
                 custIdSender.DataSource = ds.Tables[0];      //assigning datasource to the dropdownlist  
                 custIdSender.DataBind();
                 con.Close();
-                
+
                 cmd = new SqlCommand(" select customer_id  from customer;", con);
                 cmd.CommandType = CommandType.Text;
-                 ds = new DataSet();
+                ds = new DataSet();
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = con;
                 con.Open();
-                 da = new SqlDataAdapter(cmd);
+                da = new SqlDataAdapter(cmd);
                 da.Fill(ds);
                 custIdReciver.DataTextField = ds.Tables[0].Columns["customer_id"].ToString(); // text field name of table dispalyed in dropdown       
                 custIdReciver.DataValueField = ds.Tables[0].Columns["customer_id"].ToString();
@@ -49,6 +51,7 @@ namespace SparksBank
             {
                 throw E;
             }
+            }
         }
 
         protected void Trans_Click(object sender, EventArgs e)
@@ -57,7 +60,7 @@ namespace SparksBank
             {
                 long val = long.Parse(amt.Text);
                 string c1 = custIdSender.SelectedItem.Text;
-                string c2 = custIdSender.SelectedItem.Text;
+                string c2 = custIdReciver.SelectedItem.Text;
                 const string strcon = "Data Source=DESKTOP-40VMRJT\\SQLEXPRESS;Initial Catalog=SparksDatabase;Integrated Security=True;";
                 SqlConnection con = new SqlConnection(strcon);
                 SqlCommand cmd = new SqlCommand(" select balance  from customer where customer_id = " + int.Parse(c1) + ";", con);

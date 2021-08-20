@@ -1,26 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cust_Details.aspx.cs" Inherits="SparksBank.Cust_Details" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Cust_Details.aspx.cs" MasterPageFile="Site1.Master" Inherits="SparksBank.Cust_Details" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TSF BANK</title>
-
-    <!-- BOOTSTRAP STYLES-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <!-- FONTAWESOME STYLES-->
-    <link href="assets/css/font-awesome.css" rel="stylesheet" />
-    <!--CUSTOM BASIC STYLES-->
-    <link href="assets/css/basic.css" rel="stylesheet" />
-    <!--CUSTOM MAIN STYLES-->
-    <link href="assets/css/custom.css" rel="stylesheet" />
-    <!-- GOOGLE FONTS-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-</head>
-<body>
-    <form id="form1" runat="server">
         <div id="wrapper">
             <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
@@ -94,19 +75,19 @@
                         <AlternatingRowStyle BackColor="White" />
                      <Columns>
                     <asp:BoundField DataField="customer_id" HeaderText="Customer ID" HeaderStyle-width="5%" HeaderStyle-height="5%"   >
-<HeaderStyle Height="5%" Width="5%"></HeaderStyle>
+<HeaderStyle Height="5%" Width="5%" HorizontalAlign="Center" VerticalAlign="Middle"></HeaderStyle>
                     </asp:BoundField>
                     <asp:BoundField DataField="cname" HeaderText="Name" HeaderStyle-width="20%" HeaderStyle-height="5%">
-<HeaderStyle Height="5%" Width="20%"></HeaderStyle>
+<HeaderStyle Height="5%" Width="20%" HorizontalAlign="Center" VerticalAlign="Middle"></HeaderStyle>
                     </asp:BoundField>
                     <asp:BoundField DataField="mobile" HeaderText="Mobile" HeaderStyle-width="20%" HeaderStyle-height="5%">
-<HeaderStyle Height="5%" Width="20%"></HeaderStyle>
+<HeaderStyle Height="5%" Width="20%" HorizontalAlign="Center" VerticalAlign="Middle"></HeaderStyle>
                     </asp:BoundField>
                     <asp:BoundField DataField="balance" HeaderText="balance" HeaderStyle-width="20%" HeaderStyle-height="5%">
-<HeaderStyle Height="5%" Width="20%"></HeaderStyle>
+<HeaderStyle Height="5%" Width="20%" HorizontalAlign="Center" VerticalAlign="Middle"></HeaderStyle>
                     </asp:BoundField>
                     <asp:BoundField DataField="astatus" HeaderText="Status" HeaderStyle-width="20%" HeaderStyle-height="5%">
-<HeaderStyle Height="5%" Width="20%"></HeaderStyle>
+<HeaderStyle Height="5%" Width="20%" HorizontalAlign="Center" VerticalAlign="Middle"></HeaderStyle>
                     </asp:BoundField>
                     <asp:TemplateField ShowHeader="True" HeaderText="Action">
             <ItemTemplate>
@@ -142,20 +123,4 @@
       
         <!-- /. PAGE INNER  -->
 
-    </form>
-    <div id="footer-sec">
-        &copy; 2021 Reharsh Deshpande | Designed For : The Sparks Foundation
-    </div>
-    <!-- /. FOOTER  -->
-    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
-    <!-- JQUERY SCRIPTS -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
-    <!-- BOOTSTRAP SCRIPTS -->
-    <script src="assets/js/bootstrap.js"></script>
-    <!-- METISMENU SCRIPTS -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
-    <!-- CUSTOM SCRIPTS -->
-    <script src="assets/js/custom.js"></script>
-
-</body>
-</html>
+     </asp:Content>
