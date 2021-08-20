@@ -36,7 +36,7 @@
 
 
                         <li>
-                            <a class="active-menu" href="Dashboard.aspx"><i class="fa fa-dashboard"></i>Dashboard</a>
+                            <a class="active-menu" href="index.aspx"><i class="fa fa-dashboard"></i>Dashboard</a>
                         </li>
                         <li>
                             <a href="Cust_details.aspx"><i class="fa fa-user "></i>Customers</a>

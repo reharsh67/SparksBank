@@ -18,8 +18,8 @@ namespace SparksBank
             {
             try
             {
-                const string strcon = "Data Source=DESKTOP-40VMRJT\\SQLEXPRESS;Initial Catalog=SparksDatabase;Integrated Security=True;";
-                SqlConnection con = new SqlConnection(strcon);
+                    const string strcon = "Data Source=SQL5103.site4now.net,1433;Initial Catalog=db_a78c7e_sparksdatabase;User Id=db_a78c7e_sparksdatabase_admin;Password=ABCD@123";
+                    SqlConnection con = new SqlConnection(strcon);
                 SqlCommand cmd = new SqlCommand(" select customer_id  from customer;", con);
                 DataSet ds = new DataSet();
                 cmd.CommandType = CommandType.Text;
@@ -61,7 +61,7 @@ namespace SparksBank
                 long val = long.Parse(amt.Text);
                 string c1 = custIdSender.SelectedItem.Text;
                 string c2 = custIdReciver.SelectedItem.Text;
-                const string strcon = "Data Source=DESKTOP-40VMRJT\\SQLEXPRESS;Initial Catalog=SparksDatabase;Integrated Security=True;";
+                const string strcon = "Data Source=SQL5103.site4now.net,1433;Initial Catalog=db_a78c7e_sparksdatabase;User Id=db_a78c7e_sparksdatabase_admin;Password=ABCD@123";
                 SqlConnection con = new SqlConnection(strcon);
                 SqlCommand cmd = new SqlCommand(" select balance  from customer where customer_id = " + int.Parse(c1) + ";", con);
                 cmd.CommandType = CommandType.Text;

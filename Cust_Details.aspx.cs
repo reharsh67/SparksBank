@@ -15,7 +15,7 @@ namespace SparksBank
         {
             try
             {
-                const string strcon = "Data Source=DESKTOP-40VMRJT\\SQLEXPRESS;Initial Catalog=SparksDatabase;Integrated Security=True;";
+                const string strcon = "Data Source=SQL5103.site4now.net,1433;Initial Catalog=db_a78c7e_sparksdatabase;User Id=db_a78c7e_sparksdatabase_admin;Password=ABCD@123";
                 SqlConnection con = new SqlConnection(strcon);
                 SqlCommand cmd = new SqlCommand(" select * from customer;", con);
                 cmd.CommandType = CommandType.Text;
